@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <title>Выбор класса</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <h1>Выбор класса</h1>
+            <button id="backBtn" class="settings-btn">←</button>
+        </header>
+
+        <main class="main">
+            <p class="instruction">Выберите ваш класс (4-11):</p>
+            
+            <div class="classes-grid" id="classesGrid">
+                <!-- Классы будут добавлены через JS -->
+            </div>
+
+            <div class="save-status" id="saveStatus"></div>
+            
+            <div class="divider"></div>
+            
+            <div class="developer-section">
+                <p class="help-text">Нужна помощь?</p>
+                <button id="developerBtn" class="developer-btn">
+                    Связаться с разработчиком
+                </button>
+            </div>
+        </main>
+    </div>
+
+    <script src="settings.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <title>Расписание уроков</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="header-left">
+                <h1>Расписание</h1>
+            </div>
+            <div class="header-right">
+                <span id="selectedClass" class="class-badge">Загрузка...</span>
+                <button id="settingsBtn" class="settings-btn">⚙️</button>
+            </div>
+        </header>
+
+        <main class="main">
+            <!-- Верхняя навигация по дням -->
+            <div class="days-nav" id="daysNav">
+                <button class="day-btn" data-day="1">ПН</button>
+                <button class="day-btn" data-day="2">ВТ</button>
+                <button class="day-btn" data-day="3">СР</button>
+                <button class="day-btn" data-day="4">ЧТ</button>
+                <button class="day-btn" data-day="5">ПТ</button>
+                <button class="day-btn" data-day="6">СБ</button>
+            </div>
+            
+            <!-- Заголовок с выбранным днем -->
+            <div class="selected-day-header" id="selectedDayHeader">
+                <h2>Понедельник</h2>
+            </div>
+            
+            <!-- Контейнер с расписанием -->
+            <div class="schedule-container" id="scheduleContainer">
+                <div class="loading">Загрузка расписания...</div>
+            </div>
+        </main>
+        
+        <!-- Нижняя навигация для мобильных -->
+        <footer class="footer-nav">
+            <button class="day-btn-footer" data-day="1">ПН</button>
+            <button class="day-btn-footer" data-day="2">ВТ</button>
+            <button class="day-btn-footer" data-day="3">СР</button>
+            <button class="day-btn-footer" data-day="4">ЧТ</button>
+            <button class="day-btn-footer" data-day="5">ПТ</button>
+            <button class="day-btn-footer" data-day="6">СБ</button>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
